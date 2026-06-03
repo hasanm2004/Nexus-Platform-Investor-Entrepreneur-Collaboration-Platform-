@@ -1,0 +1,31 @@
+@media(max-width:992px){
+
+.dashboard{
+flex-direction:column;
+}
+
+.sidebar{
+width:100%;
+}
+
+.cards{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media(max-width:768px){
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:35px;
+}
+
+.controls{
+flex-direction:column;
+}
+
+}

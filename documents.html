@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Document Chamber</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<div class="sidebar">
+
+<h3>Nexus</h3>
+
+<div class="text-end mt-3 me-3">
+    <a href="index.html" class="btn btn-secondary">
+        ← Back to Homepage
+    </a>
+</div>
+
+<ul>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="meetings.html">Meetings</a></li>
+<li><a href="documents.html">Documents</a></li>
+<li><a href="payments.html">Payments</a></li>
+
+<!-- CENTER IMAGE -->
+        <div class="mt-4 d-flex justify-content-center">
+
+            <img src="images/DocumentChamber.jpg"
+                 class="img-fluid w-20 rounded shadow"
+                 alt="Document Chamber">
+
+
+
+
+
+
+</ul>
+
+</div>
+
+<div class="main-content">
+
+<h2>Document Chamber</h2>
+
+<div class="document-box">
+
+<h4>Upload Contract / Agreement</h4>
+
+<input
+type="file"
+id="fileInput"
+class="form-control mb-3"
+>
+
+<p id="fileName">
+No File Selected
+</p>
+
+</div>
+
+<div class="signature-box mt-4">
+
+
+
+<h4>E-Signature</h4>
+
+<input
+type="text"
+id="signature"
+placeholder="Type Your Signature"
+class="form-control mb-3"
+>
+
+<button
+id="signBtn"
+class="btn btn-success"
+>
+Sign Document
+</button>
+
+
+<p id="signedText" class="mt-3"></p>
+
+<button id="downloadPdfBtn" class="btn btn-primary mt-3">
+    Download Signed PDF
+</button>
+
+</div>
+
+<div class="status-box mt-4">
+
+<h4>Document Status</h4>
+
+<select id="statusSelect" class="form-select">
+
+<option>Draft</option>
+
+<option>In Review</option>
+
+<option>Signed</option>
+
+</select>
+
+<div id="statusBadge" class="badge-status mt-3">
+Draft
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="js/documents.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</body>
+</html>
